@@ -20,7 +20,7 @@ const Home = () => {
         <div style={{
           position: 'absolute',
           top: 0, left: 0, right: 0, bottom: 0,
-          backgroundImage: 'url(/hero-bg.jpg)',
+          backgroundImage: `url(${import.meta.env.BASE_URL}hero-bg.jpg)`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           zIndex: -2
