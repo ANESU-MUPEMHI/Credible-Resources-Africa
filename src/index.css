@@ -131,3 +131,37 @@ a {
   outline: none;
   border-color: var(--brand-gold);
 }
+
+/* --- Mobile Responsiveness --- */
+.mobile-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .desktop-menu {
+    display: none !important;
+  }
+  
+  .mobile-toggle {
+    display: block !important;
+  }
+  
+  .heading-hero {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  /* Make forms and grids stack completely on mobile */
+  .grid-2-cols {
+    grid-template-columns: 1fr !important;
+  }
+  
+  /* Ensure the navbar layout allows space for toggle */
+  .navbar > div {
+    padding: 1rem !important;
+  }
+}

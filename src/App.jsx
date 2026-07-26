@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import AuthWizard from './components/AuthWizard';
+import IosInstallPrompt from './components/IosInstallPrompt';
 
 import Home from './pages/Home';
 import Services from './pages/Services';
@@ -48,6 +49,7 @@ function App() {
         </main>
         
         <Footer />
+        <IosInstallPrompt />
         
         <AuthWizard isOpen={isAuthOpen} onClose={() => setIsAuthOpen(false)} />
       </div>
