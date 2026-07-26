@@ -31,7 +31,7 @@ function App() {
   const [isAuthOpen, setIsAuthOpen] = useState(false);
 
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <AuthTrigger setIsAuthOpen={setIsAuthOpen} />
       <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
         <Navbar onOpenAuth={() => setIsAuthOpen(true)} />
